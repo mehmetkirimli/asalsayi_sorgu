@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class main {
+
+    static void sayi(int a) {
+        int sayac = 0;
+        for (int i = 2; i <= a; i++) {
+
+            if (a % i == 0) {
+                sayac++;
+
+            }
+        }
+        if (sayac == 1) {
+            System.out.println("girilen sayi asal sayidir");
+        } else {
+            System.out.println("asal degil :(");
+        }
+    }
+
+    public static void main(String[] args) {
+        
+        System.out.print("BIR SAYI GIRIN :");
+        Scanner bjk = new Scanner(System.in);
+        
+        int a = bjk.nextInt();
+        sayi(a);
+    }
+}
